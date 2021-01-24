@@ -1,0 +1,280 @@
+//Abrir librerías 
+#include<stdio.h>
+#include<math.h>
+
+//Bloque de variables
+
+int main(){
+	
+	int GastoCaloricoDiario;
+	float p, e, a, dias, metabolismoBasal, x, y, z;
+	char s, h, m, actividadFisica, nulo, moderado, ligero, fuerte;
+	
+	/*
+	Bloquee de instrucciones 
+	*/
+	
+	printf("Hola, por favor ingrese los datos que se piden a continuacion:\n");
+	printf("Ingrese su edad:\n");
+	scanf("%f, &e");
+	printf("Ingrese su peso:\n");
+	scanf("%f, &p");
+	printf("Ingrese su altura en centimetros:\n");
+	scanf("%f, &a");
+	printf("Ingrese su sexo (m/h):\n");
+	scanf("%c, &m, &h");
+
+	
+	//Estructura de selección (if/else) para sacar el metabolismo badal dependiendo del sexo de la persona
+	
+	if(s=m){
+		
+		x= (10 * p);
+		y= (6.25 * a);
+		z= (5 * e);
+		metabolismoBasal= (x+ y - z -161);
+		printf("Su metabolismo basal es:%d", metabolismoBasal);
+	
+	}
+	
+	else if(s='h'){
+		
+		x= (10 * p);
+		y= (6.25 * a);
+		z= (5 * e);
+		metabolismoBasal= (x+ y -z  + 5);
+		printf("Su metabolismo es:%d", metabolismoBasal);
+	}
+
+
+
+printf("Ingrese la cantidad de actividad fisica que realiza:\n");
+printf("nulo (no hace ejercicio)");
+printf("ligero (1 a 3 días)");
+printf("moderado (3 a 5 días)");
+printf("fuerte (6 días)");
+scanf("%f, &d");
+		
+		if (actividadFisica==nulo){
+			GastoCaloricoDiario= metabolismoBasal*1.2;
+			printf("Su gasto calorico diario es:%d", GastoCaloricoDiario);
+		}	
+		else if (actividadFisica ==ligero ){
+			GastoCaloricoDiario= metabolismoBasal*1.375;
+			printf("Su gasto calorico diario es:%d", GastoCaloricoDiario);
+		}	
+			if (actividadFisica ==moderado){
+				GastoCaloricoDiario= metabolismoBasal*1.55;
+				printf("Su gasto calorico diario es:%d", GastoCaloricoDiario);
+			}
+			else if(actividadFisica ==fuerte);{
+				GastoCaloricoDiario= metabolismoBasal*1.725;
+				printf("Su gasto calorico diario es:%d", GastoCaloricoDiario);
+			}
+
+}
+
+
+
+//Abrir librerías//
+
+#include<stdio.h>
+
+//Bloque de variables 
+
+int main (){
+	
+int  LeguminosasProteinas, cereales, Grupo; 
+char Frutas;
+char cereza, melon, manzana, fresa, papaya, sandia, moras, mandarina, kiwi, frambuesas;
+
+	/*
+	Bloque de instrucciones 
+	*/
+	do{
+		printf("Menu de opciones:\n");
+		printf("Grupo 1: Frutas\n");
+		printf("Grupo 2: Cereales\n");
+		printf("Grupo 3: Leguminosas y proteínas\n");
+		printf("Seleccione el grupo:\n");
+		scanf("%d", &Grupo);
+
+	//A continuación voy a usar condicionales con la setencia switch para crear casos y hacer las combinaciones de cada grupo 
+	
+		switch(Grupo){
+
+			case 1:
+				printf("Cereza\n"); 
+				printf("Melon\n");
+				printf("Manzana\n");
+				printf("Fresa\n");
+				printf("Papaya\n");
+				printf("Sandia\n");
+				printf("Moras\n");
+				printf("Mandarina\n");
+				printf("Kiwi\n");
+				printf("Frambuesas\n");
+				
+				printf("Introduzca la fruta que tenga:\n");
+				scanf("%d", &Frutas);
+				break;
+				
+				if (Frutas = cereza){
+				
+					
+					printf("1 taza de melon\n");
+					printf("1 pieza de manzana mediana\n");
+					printf("17 piezas de fresa\n");
+					printf("1 taza de papaya\n");
+					printf("1 taza de sandía\n");
+					printf("1 taza de moras\n");
+					printf("2 piezas de mandarina\n");
+					printf("1. 5 piezas de kiwi\n");
+					printf("1 taza de frambuesas\n");
+				}
+				else if (Frutas = melon){
+					
+					printf("1 pieza de manzana mediana\n");
+					printf("17 piezas de fresa\n");
+					printf("1 taza de papaya\n");
+					printf("1 taza de sandía\n");
+					printf("1 taza de moras\n");
+					printf("2 piezas de mandarina\n");
+					printf("1. 5 piezas de kiwi\n");
+					printf("1 taza de frambuesas\n");
+					printf("20 piezas de cereza\n");
+				}
+				
+				if (Frutas = fresa){
+					
+					printf("1 taza de melon\n");
+					printf("1 pieza de manzana mediana\n");
+					printf("20 piezas de cereza\n");
+					printf("1 taza de papaya\n");
+					printf("1 taza de sandía\n");
+					printf("1 taza de moras\n");
+					printf("2 piezas de mandarina\n");
+					printf("1. 5 piezas de kiwi\n");
+					printf("1 taza de frambuesas\n");
+					
+				}
+				
+				else if(Frutas = papaya){
+					
+					printf("1 taza de melon\n");
+					printf("1 pieza de manzana mediana\n");
+					printf("20 piezas de cereza\n");
+					printf("17 piezas de fresa\n");	
+					printf("1 taza de sandía\n");
+					printf("1 taza de moras\n");
+					printf("2 piezas de mandarina\n");
+					printf("1. 5 piezas de kiwi\n");
+					printf("1 taza de frambuesas\n");
+				}
+				 
+				if(Frutas = sandia){
+					
+					printf("1 taza de melon\n");
+					printf("1 pieza de manzana mediana\n");
+					printf("20 piezas de cereza\n");
+					printf("1 taza de papaya\n");
+					printf("17 piezas de fresa\n");
+					printf("1 taza de moras\n");
+					printf("2 piezas de mandarina\n");
+					printf("1. 5 piezas de kiwi\n");
+					printf("1 taza de frambuesas\n");
+					
+				}
+				else if (Frutas =moras){
+					
+					printf("1 taza de melon\n");
+					printf("1 pieza de manzana mediana\n");
+					printf("20 piezas de cereza\n");
+					printf("1 taza de papaya\n");
+					printf("17 piezas de fresa\n");
+					printf("1 taza de sandía\n");
+					printf("2 piezas de mandarina\n");
+					printf("1. 5 piezas de kiwi\n");
+					printf("1 taza de frambuesas\n");
+				
+				}	
+				if (Frutas = mandarina){
+					
+					printf("1 taza de melon\n");
+					printf("1 pieza de manzana mediana\n");
+					printf("20 piezas de cereza\n");
+					printf("1 taza de papaya\n");
+					printf("17 piezas de fresa\n");
+					printf("1 taza de sandía\n");
+					printf("1 taza de moras\n");
+					printf("1. 5 piezas de kiwi\n");
+					printf("1 taza de frambuesas\n");	
+				}
+				else if (Frutas = kiwi){
+					
+					printf("1 taza de melon\n");
+					printf("1 pieza de manzana mediana\n");
+					printf("20 piezas de cereza\n");
+					printf("1 taza de papaya\n");
+					printf("17 piezas de fresa\n");
+					printf("1 taza de sandía\n");
+					printf("1 taza de moras\n");
+					printf("2 piezas de mandarina\n");
+					printf("1 taza de frambuesas\n");
+				}
+			break;	
+			
+			case 2:
+				printf("Pechuga de pavo\n");
+				printf("Huevo\n");
+				printf("Pollo\n");
+				printf("Salmon Ahumado\n");
+				printf("Queso cottage\n");
+				printf("Yogurt\n");
+				printf("Queso Panela\n");
+				printf("Queso Feta\n");
+				printf("Frijoles\n");
+				printf("Leche de almendras\n");
+				break;
+			
+					printf("2 rebanadas de pechuga de pavo\n");
+					printf("1 pieza de huevo\n");
+					printf("Tamaño de la palma de tu mano de pollo\n");
+					printf("Tamaño de la palma de tu mano de salmon ahumado\n");
+					printf("2/3 de taza o 160g de frijoles\n");
+					printf("1 taza de yogurt\n");
+					printf("1 taza de leche de almendras\n");
+					printf("1 rebanada del grosor de un dedo de queso panela\n");
+					printf("1 rebanada del grosor de un dedo de queso feta\n");
+					printf("1/5 de taza o 40g de queso cottage\n");
+				
+			case 3:
+				printf("Salmas\n");
+				printf("Pan Ezequiel\n");
+				printf("Tortilla de maiz\n");
+				printf("Tostada horneada\n");
+				printf("Tortilla de nopal\n");
+				printf("Avena\n");
+				printf("Pan integral\n");
+				printf("All bran\n");
+				printf("Galletas Maria\n");
+				printf("Granola\n");
+				break;
+				
+					printf("1 paquete de Salmas\n");
+					printf("1 rebanada de Pan Ezequiel\n");
+					printf("2 tortillas de maiz\n");
+					printf("3 tortillas de nopal\n");
+					printf("1 tostada\n");
+					printf("1/2 taza de avena\n");
+					printf("1 pieza de pan integral\n");
+					printf("5 piezas de galletas Maria\n");
+					printf("3 cucharadas de granola\n");
+					printf("1 pieza de all bran");
+		}
+	}while(Grupo);
+
+	
+	return 0;
+	
+
